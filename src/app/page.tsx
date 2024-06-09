@@ -1,9 +1,7 @@
-import {HomePage} from "@/components/home/HomePage";
-
-export default function Home() {
+export default function Main() {
     return (
         <>
-            <HomePage />
+            <h1 className={'text-white font-rubik'}>POCETNA</h1>
         </>
-    );
+    )
 }
