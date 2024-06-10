@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        rubik: ['var(--font-rubik)']
+        rubik: ['var(--font-rubik)'],
+        poppins: 'var(--font-poppins)',
       },
     },
   },

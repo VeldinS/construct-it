@@ -1,7 +1,9 @@
-export default function Main() {
+import Navbar from "@/components/navbar/Navbar";
+
+export default function Home() {
     return (
-        <>
-            <h1 className={'text-white font-rubik'}>POCETNA</h1>
-        </>
+        <div className={'w-screen h-auto bg-white flex flex-col items-center justify-center'}>
+            <Navbar />
+        </div>
     )
 }
