@@ -72,7 +72,7 @@ function Navbar() {
                                 <p className={'font-poppins text-black text-xl font-medium tracking-widest'}>Kontakt</p>
                             </Link>
                         </div>
-                        <div className="flex flex-col items-center justify-between gap-6 absolute bottom-4 left-0 right-0">
+                        <div className="flex flex-col items-center justify-between gap-6 absolute bottom-12 left-0 right-0">
                             <Link href="/" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
                                 info@construct.it
                             </Link>
