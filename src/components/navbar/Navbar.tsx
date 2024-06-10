@@ -23,22 +23,24 @@ function Navbar() {
     };
 
     return (
-        <div className="w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between">
-            <Image src={logoImage} alt={'Logo for Construct..it'} width={100} height={40}/>
+        <div className="fixed top-0 z-[999] w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between">
+            <Link href={'/'}>
+                <Image src={logoImage} alt={'Logo for Construct..it'} width={100} height={40}/>
+            </Link>
             <div className="hidden md:flex flex-row items-end justify-center lg:gap-12 gap-6 ">
-                <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                <Link href={'/o-nama'} className={'flex flex-row items-center justify-center gap-2'}>
                     <Image src={buildingIcon} alt={'Building svg icon.'} width={25} height={25}/>
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>O nama</p>
                 </Link>
-                <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                <Link href={'/o-nama#projekti'} className={'flex flex-row items-center justify-center gap-2'}>
                     <Image src={projectsIcon} alt={'Building svg icon.'} width={25} height={25}/>
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>Projekti</p>
                 </Link>
-                <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                <Link href={'/usluge'}className={'flex flex-row items-center justify-center gap-2'}>
                     <Image src={servicesIcon} alt={'Building svg icon.'} width={25} height={25}/>
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>Usluge</p>
                 </Link>
-                <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                <Link href={'#kontakt'} className={'flex flex-row items-center justify-center gap-2'}>
                     <Image src={contactIcon} alt={'Building svg icon.'} width={25} height={25}/>
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>Kontakt</p>
                 </Link>

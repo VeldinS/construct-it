@@ -11,6 +11,10 @@ module.exports = {
         rubik: ['var(--font-rubik)'],
         poppins: 'var(--font-poppins)',
       },
+      colors: {
+        'orange-primary': '#FFB400',
+
+      }
     },
   },
   plugins: [],
