@@ -6,8 +6,7 @@ import doubleArrow from '@/assets/icons/double-right-arrow.svg';
 function ProjectSection() {
     return (
         <section className={'h-screen w-screen flex flex-row items-center justify-center bg-white'}>
-            <div
-                className="w-1/3 h-full flex flex-col items-start justify-start gap-4 px-[2%] pt-[20%] bg-orange-primary">
+            <div className="w-1/3 h-full flex flex-col items-start justify-start gap-4 px-[2%] pt-[10%] bg-orange-primary">
                 <div className="relative flex flex-row items-start justify-start gap-3">
                     <div className="absolute w-[50px] h-[50px]">
                         <Image src={doubleArrow} alt="Double right arrow." fill />

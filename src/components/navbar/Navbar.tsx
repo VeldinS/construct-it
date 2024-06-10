@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,6 +15,36 @@ import hamburgerIcon from '@/assets/icons/Hamburger.svg';
 import closeIcon from '@/assets/icons/Close.svg';
 
 function Navbar() {
+    const [isScrolling, setIsScrolling] = useState(false);
+    const [isInitialLoad, setIsInitialLoad] = useState(true);
+    let scrollTimeout:any = null;
+
+    const handleScroll = () => {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+        setIsScrolling(true);
+
+        scrollTimeout = setTimeout(() => {
+            setIsScrolling(false);
+        }, 200); // Adjust the delay as needed
+    };
+
+    useEffect(() => {
+        const initialLoadTimeout = setTimeout(() => {
+            setIsInitialLoad(false);
+        }, 5000);
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            clearTimeout(initialLoadTimeout);
+        };
+    }, []);
 
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,12 +53,12 @@ function Navbar() {
     };
 
     return (
-        <div className="fixed top-0 z-[999] w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between">
+        <div className={`fixed top-0 z-[999] w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between transition-transform duration-300 ${isInitialLoad || isScrolling ? '-translate-y-full' : 'translate-y-0'}`}>
             <Link href={'/'}>
                 <Image src={logoImage} alt={'Logo for Construct..it'} width={100} height={40}/>
             </Link>
             <div className="hidden md:flex flex-row items-end justify-center lg:gap-12 gap-6 ">
-                <Link href={'/o-nama'} className={'flex flex-row items-center justify-center gap-2'}>
+            <Link href={'/o-nama'} className={'flex flex-row items-center justify-center gap-2'}>
                     <Image src={buildingIcon} alt={'Building svg icon.'} width={25} height={25}/>
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>O nama</p>
                 </Link>
