@@ -43,17 +43,17 @@ function Navbar() {
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>Kontakt</p>
                 </Link>
             </div>
-            <div className="relative flex md:hidden">
+            <div className="relative flex md:hidden ">
                 <button onClick={toggleMenu}>
                     <Image src={hamburgerIcon} alt={'Hamburger icon for mobile menu.'} width={40} height={40}/>
                 </button>
-                <div className={`fixed top-0 left-0 w-screen h-screen bg-white text-white transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <div className={`fixed top-0 right-0 w-screen h-screen bg-white text-white transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <div className="flex justify-end p-4">
                         <button onClick={toggleMenu} className="text-2xl">
                             <Image src={closeIcon} alt={'Hamburger icon for mobile menu.'} width={30} height={30}/>
                         </button>
                     </div>
-                    <nav className="flex flex-col items-center justify-center h-2/3 gap-20">
+                    <nav className="flex flex-col items-center justify-between h-2/3 py-8">
                         <div className="flex flex-col items-center justify-center gap-10">
                             <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
                                 <Image src={buildingIcon} alt={'Building svg icon.'} width={35} height={35}/>
