@@ -53,7 +53,7 @@ function Navbar() {
                             <Image src={closeIcon} alt={'Hamburger icon for mobile menu.'} width={30} height={30}/>
                         </button>
                     </div>
-                    <nav className="flex flex-col items-center justify-between h-2/3 py-8">
+                    <nav className="flex flex-col items-center justify-center h-1/2">
                         <div className="flex flex-col items-center justify-center gap-10">
                             <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
                                 <Image src={buildingIcon} alt={'Building svg icon.'} width={35} height={35}/>
@@ -72,7 +72,7 @@ function Navbar() {
                                 <p className={'font-poppins text-black text-xl font-medium tracking-widest'}>Kontakt</p>
                             </Link>
                         </div>
-                        <div className="flex flex-col items-center justify-between gap-6">
+                        <div className="flex flex-col items-center justify-between gap-6 absolute bottom-4 left-0 right-0">
                             <Link href="/" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
                                 info@construct.it
                             </Link>
