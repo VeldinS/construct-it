@@ -23,7 +23,7 @@ function Navbar() {
     };
 
     return (
-        <div className="w-screen max-w-[1800px] bg-white px-[2%] py-0 md:py-2 flex flex-row items-center justify-between">
+        <div className="w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between">
             <Image src={logoImage} alt={'Logo for Construct..it'} width={100} height={40}/>
             <div className="hidden md:flex flex-row items-end justify-center lg:gap-12 gap-6 ">
                 <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
