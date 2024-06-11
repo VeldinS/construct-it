@@ -11,7 +11,7 @@ import Link from "next/link";
 function Footer() {
     return (
         <section id={'kontakt'} className={'w-screen h-auto flex flex-col lg:flex-row items-stretch justify-center'}>
-            <form className={'w-full lg:w-1/2 h-auto bg-orange-primary p-16 flex flex-col justify-start items-start gap-8'}>
+            <form className={'w-full lg:w-1/2 h-auto bg-orange-primary py-4 lg:px-16 py-16 flex flex-col justify-start items-start gap-8'}>
                 <h1 className={'text-[#2A2A2A] font-rubik text-3xl md:text-4xl font-bold tracking-wider'}>
                     Kontakt
                 </h1>
