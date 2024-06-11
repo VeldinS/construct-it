@@ -1,8 +1,12 @@
+import Navbar from "@/components/navbar/Navbar";
+import LandingSection from "@/components/about/landing-section";
+
 function AboutPage() {
     return (
-        <>
-            <h1 className={'text-white'}>O NAMA</h1>
-        </>
+        <div className={'w-screen h-auto bg-white flex flex-col items-center justify-center'}>
+            <Navbar/>
+            <LandingSection />
+        </div>
     );
 }
 

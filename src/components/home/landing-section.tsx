@@ -14,7 +14,7 @@ function LandingSection() {
         ];
 
     return (
-        <section className={'w-screen h-screen relative bg-cover bg-center bg- flex flex-col items-center justify-center gap-8'}>
+        <section className={'w-screen h-screen relative bg-cover bg-center flex flex-col items-center justify-center gap-8'}>
             <ImagesSlider className="h-full " images={images}>
             <motion.div
                 initial={{
