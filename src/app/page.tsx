@@ -3,6 +3,7 @@ import LandingSection from "@/components/home/landing-section";
 import ServiceCard from "@/components/home/service-card";
 import ProjectSection from "@/components/home/project-section";
 import ParallaxSection from "@/components/home/parallax-section";
+import TestimonialsSection from "@/components/home/testimonials-section";
 
 export default function Home() {
     return (
@@ -37,7 +38,7 @@ export default function Home() {
             </section>
             <ProjectSection />
             <ParallaxSection />
-            <ProjectSection />
+            <TestimonialsSection />
         </div>
     )
 }
