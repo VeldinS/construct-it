@@ -7,44 +7,12 @@ import phoneIcon from '@/assets/icons/phone-icon.svg';
 import mailIcon from '@/assets/icons/mail-icon.svg';
 
 import Link from "next/link";
+import ContactForm from "@/components/footer/contact-form";
 
 function Footer() {
     return (
         <section id={'kontakt'} className={'w-screen h-auto flex flex-col lg:flex-row items-stretch justify-center'}>
-            <form className={'w-full lg:w-1/2 h-auto bg-orange-primary px-4 lg:px-16 py-16 flex flex-col justify-start items-start gap-8'}>
-                <h1 className={'text-[#2A2A2A] font-rubik text-3xl md:text-4xl font-bold tracking-wider'}>
-                    Kontakt
-                </h1>
-                <div className={'w-[50px] h-[5px] bg-[#2A2A2A] '}></div>
-                <div className={'w-full flex flex-col justify-start items-center gap-4'}>
-                    <div className={'w-full flex flex-row justify-start items-center gap-8'}>
-                        <input
-                            type="text"
-                            id="name"
-                            className="w-1/2 py-4 px-4 font-rubik text-lg font-extralight"
-                            placeholder="Ime"
-                        />
-                        <input
-                            type="text"
-                            id="email"
-                            className="w-1/2 py-4 px-4 font-rubik text-lg font-extralight"
-                            placeholder="Email / broj telefona"
-                        />
-                    </div>
-                    <textarea
-                        id="textarea"
-                        className="w-full py-4 px-4 pb-16 font-rubik text-lg font-extralight"
-                        placeholder="Poruka / upit"
-                    ></textarea>
-                    <div className={'w-full flex flex-row items-end justify-end'}>
-                        <button type={'submit'}>
-                            <p className='text-base font-rubik font-semibold text-white hover:text-black tracking-widest px-6 py-3 border-4 border-white bg-transparent hover:bg-white transition-all duration-500'>
-                                POŠALJI
-                            </p>
-                        </button>
-                    </div>
-                </div>
-            </form>
+            <ContactForm />
             <div className={'w-full lg:w-1/2 h-auto bg-white'}>
                 <div className={'w-full h-auto bg-[#2A2A2A] flex flex-row justify-center items-center gap-16 py-10'}>
                     <Link href={'/'}>
