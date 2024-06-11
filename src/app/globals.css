@@ -25,6 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {

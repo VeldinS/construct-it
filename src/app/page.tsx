@@ -4,6 +4,7 @@ import ServiceCard from "@/components/home/service-card";
 import ProjectSection from "@/components/home/project-section";
 import ParallaxSection from "@/components/home/parallax-section";
 import TestimonialsSection from "@/components/home/testimonials-section";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
     return (
@@ -39,6 +40,7 @@ export default function Home() {
             <ProjectSection />
             <ParallaxSection />
             <TestimonialsSection />
+            <Footer />
         </div>
     )
 }

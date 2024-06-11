@@ -3,6 +3,7 @@
 import React, {useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
 import { useState } from "react";
 
@@ -52,6 +53,7 @@ function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
+
     return (
         <div className={`fixed top-0 z-[999] w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between transition-transform duration-300 ${isInitialLoad || isScrolling ? '-translate-y-full' : 'translate-y-0'}`}>
             <Link href={'/'}>
@@ -70,10 +72,10 @@ function Navbar() {
                     <Image src={servicesIcon} alt={'Building svg icon.'} width={25} height={25}/>
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>Usluge</p>
                 </Link>
-                <Link href={'#kontakt'} className={'flex flex-row items-center justify-center gap-2'}>
+                <ScrollLink to={'kontakt'} smooth={true} duration={1000} className={'flex cursor-pointer flex-row items-center justify-center gap-2'}>
                     <Image src={contactIcon} alt={'Building svg icon.'} width={25} height={25}/>
                     <p className={'font-poppins text-black text-lg font-medium tracking-widest'}>Kontakt</p>
-                </Link>
+                </ScrollLink>
             </div>
             <div className="relative flex md:hidden ">
                 <button onClick={toggleMenu}>
@@ -99,13 +101,13 @@ function Navbar() {
                                 <Image src={servicesIcon} alt={'Building svg icon.'} width={35} height={35}/>
                                 <p className={'font-poppins text-black text-xl font-medium tracking-widest'}>Usluge</p>
                             </Link>
-                            <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                            <ScrollLink to={'kontakt'} smooth={true} duration={1000} className={'flex cursor-pointer flex-row items-center justify-center gap-2'}>
                                 <Image src={contactIcon} alt={'Building svg icon.'} width={35} height={35}/>
                                 <p className={'font-poppins text-black text-xl font-medium tracking-widest'}>Kontakt</p>
-                            </Link>
+                            </ScrollLink>
                         </div>
                         <div className="flex flex-col items-center justify-between gap-6 absolute bottom-[20%] left-0 right-0">
-                            <Link href="/" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
+                            <Link href="mailto:info@construct.it" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
                                 info@construct.it
                             </Link>
                             <Image src={logoImage} alt={'Logo for Construct..it'} width={130} height={40}/>
