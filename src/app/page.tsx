@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/Navbar";
 import LandingSection from "@/components/home/landing-section";
 import ServiceCard from "@/components/home/service-card";
 import ProjectSection from "@/components/home/project-section";
+import ParallaxSection from "@/components/home/parallax-section";
 
 export default function Home() {
     return (
@@ -34,6 +35,8 @@ export default function Home() {
                              image={'/assets/icons/upr-projektima-icon.svg'}
                 />
             </section>
+            <ProjectSection />
+            <ParallaxSection />
             <ProjectSection />
         </div>
     )
