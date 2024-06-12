@@ -89,15 +89,15 @@ function Navbar() {
                     </div>
                     <nav className="flex flex-col items-center justify-center h-1/2">
                         <div className="flex flex-col items-center justify-center gap-10">
-                            <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                            <Link href={"/o-nama"} className={'flex flex-row items-center justify-center gap-2'}>
                                 <Image src={buildingIcon} alt={'Building svg icon.'} width={35} height={35}/>
                                 <p className={'font-poppins text-black text-xl font-medium tracking-widest'}>O nama</p>
                             </Link>
-                            <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                            <Link href={'/o-nama#projekti'} className={'flex flex-row items-center justify-center gap-2'}>
                                 <Image src={projectsIcon} alt={'Building svg icon.'} width={35} height={35}/>
                                 <p className={'font-poppins text-black text-xl font-medium tracking-widest'}>Projekti</p>
                             </Link>
-                            <Link href="/" className={'flex flex-row items-center justify-center gap-2'}>
+                            <Link href={"/usluge"} className={'flex flex-row items-center justify-center gap-2'}>
                                 <Image src={servicesIcon} alt={'Building svg icon.'} width={35} height={35}/>
                                 <p className={'font-poppins text-black text-xl font-medium tracking-widest'}>Usluge</p>
                             </Link>
