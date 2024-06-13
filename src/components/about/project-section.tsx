@@ -24,7 +24,7 @@ function ProjectSection() {
             <div className="relative w-full lg:w-1/3 h-[30vh] lg:h-full">
                 <div
                     ref={bgRef}
-                    className="bg-[url('/assets/other/stone-wall.jpg')] absolute inset-0 bg-fixed bg-cover bg-center"
+                    className="bg-[url('/assets/other/stone-wall.jpg')] absolute inset-0 bg-fixed bg-contain md:bg-cover bg-center"
                 />
             </div>
             <div className={' w-full lg:w-2/3 h-auto lg:h-full flex flex-col items-start justify-start'}>

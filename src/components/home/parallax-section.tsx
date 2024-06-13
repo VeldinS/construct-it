@@ -22,7 +22,7 @@ const ParallaxSection = () => {
         <div className="relative w-screen h-screen overflow-hidden">
             <div
                 ref={bgRef}
-                className="bg-[url('/assets/other/machine.jpg')] absolute inset-0 bg-fixed bg-cover bg-center"
+                className="bg-[url('/assets/other/machine.jpg')] absolute inset-0 bg-fixed bg-contain md:bg-cover bg-center"
             />
             <div className="relative flex flex-col items-center justify-center gap-8 h-full bg-black bg-opacity-50  ">
                 <div className={'w-[50px] h-[5px] bg-orange-primary '}></div>
