@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
 import LandingSection from "@/components/about/landing-section";
 import ProjectSection from "@/components/about/project-section";
+import ProjectsList from "@/components/about/projects-list";
 
 function AboutPage() {
     return (
@@ -8,6 +9,7 @@ function AboutPage() {
             <Navbar/>
             <LandingSection />
             <ProjectSection />
+            <ProjectsList />
         </div>
     );
 }
