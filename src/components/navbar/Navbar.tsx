@@ -55,7 +55,7 @@ function Navbar() {
 
 
     return (
-        <div className={`fixed top-0 z-[999] w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between transition-transform duration-300 ${isInitialLoad || isScrolling ? '-translate-y-full' : 'translate-y-0'}`}>
+        <div className={`fixed top-0 z-[999] w-screen max-w-[1800px] bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between transition-transform duration-300 ${isInitialLoad || isScrolling ? '-translate-y-[150%]' : 'translate-y-0'}`}>
             <Link href={'/'}>
                 <Image src={logoImage} alt={'Logo for Construct..it'} width={100} height={40}/>
             </Link>
