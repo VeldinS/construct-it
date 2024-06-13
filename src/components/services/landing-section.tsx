@@ -6,7 +6,7 @@ import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
 function LandingSection() {
     return (
-        <section className="w-screen h-auto lg:h-screen flex flex-col justify-start items-start">
+        <section className="relative z-2 w-screen h-auto lg:h-screen flex flex-col justify-start items-start shadow-lg">
             <div className="relative w-full h-auto lg:h-5/6 flex flex-col lg:flex-row justify-between items-start bg-[url('/assets/other/machine2.jpg')] bg-cover bg-center">
                 <div className={'absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-2'}></div>
                 <div className={"relative z-1 w-auto h-full px-[3%] sm:px-[10%] py-[30%] sm:py-[20%] lg:py-16 flex flex-col justify-center items-start gap-12"}>
