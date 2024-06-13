@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonSecondary from "@/components/buttons/button-secondary";
+import VideoBackgroundDiv from "@/components/about/video";
 
 function VideoSection() {
 
@@ -14,16 +15,7 @@ function VideoSection() {
                 <ButtonSecondary text={'KONTAKTIRAJ NAS'} link={'#kontakt'} />
             </div>
             <div className={' w-full lg:w-2/3 h-auto lg:h-full flex flex-col items-start justify-start'}>
-                <div
-                    className={'relative hidden md:flex w-full h-[200px] sm:h-[300px] lg:h-4/5 bg-[#F7F7F7] flex-col items-start justify-center gap-8 px-[8%] py-12 lg:py-0'}>
-                    <video
-                        className="absolute hidden md:block top-0 left-0 w-full h-full object-cover"
-                        src="/assets/videos/video.mp4"
-                        autoPlay
-                        loop
-                        muted
-                    />
-                </div>
+                <VideoBackgroundDiv />
                 <div
                     className={'w-full h-auto md:h-1/5 bg-white flex flex-col md:flex-row items-center justify-center'}>
                     <div
@@ -31,7 +23,7 @@ function VideoSection() {
                         <h1 className={'font-rubik text-4xl text-black font-bold'}>Kontaktirajte Nas</h1>
                         <p className={'font-rubik text-xl text-black font-bold'}>info@construct.it</p>
                     </div>
-                    <div className={'w-full md:w-1/2 h-full bg-white py-4 md:py-0 flex flex-col justify-center items-center gap-2'}>
+                    <div className={'w-full md:w-1/2 h-full bg-white py-4 md:py-0 hidden md:flex flex-col justify-center items-center gap-2'}>
                         <button className='text-base font-rubik font-semibold text-black hover:text-white tracking-widest px-6 py-3 border-4 border-black bg-transparent hover:bg-black transition-all duration-500'>
                             ZAPOČNIMO POSAO
                         </button>

@@ -89,28 +89,28 @@ function Navbar() {
                     </div>
                     <nav className="flex flex-col items-start pl-4 justify-center h-1/2">
                         <div className="flex flex-col items-start justify-center gap-12">
-                            <Link href={"/o-nama"} className={'flex flex-row items-center justify-center gap-4'}>
+                            <Link onClick={toggleMenu} href={"/o-nama"} className={'flex flex-row items-center justify-center gap-4'}>
                                 <Image src={buildingIcon} alt={'Building svg icon.'} width={50} height={50}/>
                                 <p className={'font-poppins text-black text-3xl font-bold tracking-widest uppercase'}>O nama</p>
                             </Link>
-                            <Link href={'/o-nama#projekti'} className={'flex flex-row items-center justify-center gap-4'}>
+                            <Link onClick={toggleMenu} href={`/o-nama#projekti`} className={'flex flex-row items-center justify-center gap-4'}>
                                 <Image src={projectsIcon} alt={'Building svg icon.'} width={50} height={50}/>
                                 <p className={'font-poppins text-black text-3xl font-bold tracking-widest uppercase'}>Projekti</p>
                             </Link>
-                            <Link href={"/usluge"} className={'flex flex-row items-center justify-center gap-4'}>
+                            <Link onClick={toggleMenu} href={"/usluge"} className={'flex flex-row items-center justify-center gap-4'}>
                                 <Image src={servicesIcon} alt={'Building svg icon.'} width={50} height={50}/>
                                 <p className={'font-poppins text-black text-3xl font-bold tracking-widest uppercase'}>Usluge</p>
                             </Link>
-                            <ScrollLink to={'kontakt'} smooth={true} duration={1000} className={'flex cursor-pointer flex-row items-center justify-center gap-4'}>
+                            <ScrollLink onClick={toggleMenu} to={'kontakt'} smooth={true} duration={1000} className={'flex cursor-pointer flex-row items-center justify-center gap-4'}>
                                 <Image src={contactIcon} alt={'Building svg icon.'} width={50} height={50}/>
                                 <p className={'font-poppins text-black text-3xl font-bold tracking-widest uppercase'}>Kontakt</p>
                             </ScrollLink>
                         </div>
                         <div className="flex flex-col items-center justify-between gap-6 absolute bottom-[15%] left-0 right-0">
-                            <Link href="mailto:info@construct.it" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
+                            <Link onClick={toggleMenu} href="mailto:info@construct.it" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
                                 info@construct.it
                             </Link>
-                            <Link href={'/'}>
+                            <Link onClick={toggleMenu} href={'/'}>
                                 <Image src={logoImage} alt={'Logo for Construct..it'} width={130} height={40}/>
                             </Link>
                         </div>

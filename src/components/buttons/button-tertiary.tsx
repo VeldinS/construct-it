@@ -1,5 +1,7 @@
+'use client'
+
 import React from 'react';
-import Link from "next/link";
+import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
 interface buttonProps {
     text: string,
@@ -8,11 +10,11 @@ interface buttonProps {
 
 function ButtonSecondary({ text, link }: buttonProps) {
     return (
-        <Link href={link}>
+        <ScrollLink to={'kontakt'} smooth={true} duration={1000} className={'flex cursor-pointer flex-row items-center justify-center'}>
             <p className='text-base font-rubik font-semibold text-white hover:text-black tracking-widest px-6 py-3 border-4 border-white hover:border-black bg-transparent hover:bg-black transition-all duration-500'>
                 {text}
             </p>
-        </Link>
+        </ScrollLink>
     );
 }
 
