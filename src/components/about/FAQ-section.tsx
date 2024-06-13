@@ -7,13 +7,11 @@ function FaqSection() {
         <section className={'h-auto lg:h-screen w-screen py-16 lg:py-[5%] px-[5%] lg:px-[10%] bg-[#F7F7F7] flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0'}>
             <div
                 className="relative bg-transparent w-full lg:w-1/3 h-auto lg:h-full flex flex-col items-start justify-start gap-12 px-0 lg:px-6">
-                <h1 className={'text-[#2A2A2A] font-rubik text-3xl sm:text-4xl tracking-widest font-bold'}>Posvećenost
-                    Kvalitetu i Zadovoljstvu Klijenata</h1>
+                <h1 className={'text-[#2A2A2A] font-rubik text-3xl sm:text-4xl tracking-widest font-bold'}>Odgovori na Vaša Najčešća Pitanja</h1>
                 <div className={'w-[50px] h-[5px] bg-orange-primary'}></div>
                 <p className={'text-[#666666] font-rubik font-extralight text-base leading-loose w-full'}>
-                    Naša misija je pružiti usluge vrhunske kvalitete i zadovoljiti sve potrebe naših klijenata. Svaki
-                    projekt pristupamo s maksimalnom pažnjom i profesionalizmom, koristeći najmodernije tehnike i
-                    tehnologije. Naš cilj je da svaki klijent bude potpuno zadovoljan rezultatom našeg rada.
+                    Razumijemo da možete imati mnogo pitanja o našim uslugama i načinu rada. Ovdje smo da vam pružimo sve potrebne informacije i osiguramo da imate jasno razumijevanje naših procesa.
+                    Ukoliko ne možete pronaći odgovori, kontaktirajte nas ispod.
                 </p>
                 <div className={'hidden lg:flex'}>
                     <ButtonSecondary text={'KONTAKTIRAJ NAS'} link={'#kontakt'}/>

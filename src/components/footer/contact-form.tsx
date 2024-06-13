@@ -39,7 +39,7 @@ const ContactForm = () => {
             <h1 className="text-[#2A2A2A] font-rubik text-3xl md:text-4xl font-bold tracking-wider">Kontakt</h1>
             <div className="w-[50px] h-[5px] bg-[#2A2A2A]"></div>
             <div className="w-full flex flex-col justify-start items-center gap-4">
-                <div className="w-full flex flex-row justify-start items-center gap-8">
+                <div className="w-full flex flex-row justify-start items-center gap-4md:gap-8">
                     <input
                         type="text"
                         id="name"
