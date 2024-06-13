@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-import ButtonPrimary from "@/components/buttons/button-primary";
+import ButtonPrimaryNoScrl from "@/components/buttons/button-primary-noscrl";
 
 const ParallaxSection = () => {
     const bgRef = useRef<HTMLDivElement>(null);
@@ -33,7 +33,7 @@ const ParallaxSection = () => {
                 <p className={'text-white text-center font-rubik font-medium text-lg'}>
                     Pogledajte naše uspješne projekte i uvjerite se u kvalitet naših radova.
                 </p>
-                <ButtonPrimary text={'POGLEDAJ PROJEKTE'} link={'#kontakt'}/>
+                <ButtonPrimaryNoScrl text={'POGLEDAJ PROJEKTE'} link={"/o-nama#projekti"}/>
             </div>
         </div>
     );

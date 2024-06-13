@@ -1,8 +1,8 @@
 'use client'
 import React from 'react';
-import ButtonPrimary from "@/components/buttons/button-primary";
 import ServiceCard from "@/components/home/service-card";
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
+import ButtonPrimaryNoScrl from "@/components/buttons/button-primary-noscrl";
 
 function LandingSection() {
     return (
@@ -20,7 +20,7 @@ function LandingSection() {
                         </p>
                     </div>
                     <div className={'relative z-3'}>
-                        <ButtonPrimary text={'POGLEDAJ DJELATNOSTI'} link={'/usluge'} />
+                        <ButtonPrimaryNoScrl text={'POGLEDAJ DJELATNOSTI'} link={'/usluge'} />
                     </div>
                 </div>
                 <div className={'w-full lg:w-[30%] h-full px-8 py-8 flex flex-col justify-center items-start gap-12 bg-orange-primary'}>

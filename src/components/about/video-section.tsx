@@ -1,6 +1,8 @@
 import React from "react";
 import ButtonSecondary from "@/components/buttons/button-secondary";
 import VideoBackgroundDiv from "@/components/about/video";
+import ButtonPrimary from "@/components/buttons/button-primary";
+import ButtonTertiary from "@/components/buttons/button-tertiary";
 
 function VideoSection() {
 
@@ -24,9 +26,7 @@ function VideoSection() {
                         <p className={'font-rubik text-xl text-black font-bold'}>info@construct.it</p>
                     </div>
                     <div className={'w-full md:w-1/2 h-full bg-white py-4 md:py-0 hidden md:flex flex-col justify-center items-center gap-2'}>
-                        <button className='text-base font-rubik font-semibold text-black hover:text-white tracking-widest px-6 py-3 border-4 border-black bg-transparent hover:bg-black transition-all duration-500'>
-                            ZAPOČNIMO POSAO
-                        </button>
+                        <ButtonSecondary text={'ZAPOČNIMO POSAO'} link={'#kontakt'} />
                     </div>
                 </div>
             </div>
