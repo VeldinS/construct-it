@@ -17,6 +17,7 @@ function AboutPage() {
             <VideoSection />
             <FaqSection />
             <TestimonialsSection />
+            <Footer />
         </div>
     );
 }
