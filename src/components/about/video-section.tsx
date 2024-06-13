@@ -17,7 +17,7 @@ function VideoSection() {
                 <div
                     className={'relative w-full h-[200px] sm:h-[300px] lg:h-4/5 bg-[#F7F7F7] flex flex-col items-start justify-center gap-8 px-[8%] py-12 lg:py-0'}>
                     <video
-                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        className="absolute hidden md:block top-0 left-0 w-full h-full object-cover"
                         src="/assets/videos/video.mp4"
                         autoPlay
                         loop
