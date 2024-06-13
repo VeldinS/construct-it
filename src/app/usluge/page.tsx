@@ -2,6 +2,7 @@ import LandingSection from "@/components/services/landing-section";
 import Navbar from "@/components/navbar/Navbar";
 import ServiceGroup from "@/components/services/service-group";
 import Footer from "@/components/footer/footer";
+import ProjectsList from "@/components/about/projects-list";
 
 function ServicesPage() {
     return (
@@ -20,6 +21,7 @@ function ServicesPage() {
                 />
 
             </div>
+            <ProjectsList />
             <Footer />
         </div>
     );
