@@ -14,7 +14,12 @@ function LandingSection() {
         ];
 
     return (
-        <section className={'w-screen h-screen relative bg-cover bg-center flex flex-col items-center justify-center gap-8'}>
+        <motion.section
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{duration: 1.3}}
+            className={'w-screen h-screen relative bg-cover bg-center flex flex-col items-center justify-center gap-8'}>
             <ImagesSlider className="h-full " images={images}>
             <motion.div
                 initial={{
@@ -40,7 +45,7 @@ function LandingSection() {
                 </div>
             </motion.div>
         </ImagesSlider>
-        </section>
+        </motion.section>
     );
 }
 

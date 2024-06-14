@@ -1,4 +1,7 @@
 'use client'
+
+import {motion} from "framer-motion";
+
 import React from 'react';
 import ServiceCard from "@/components/home/service-card";
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
@@ -6,7 +9,12 @@ import ButtonPrimaryNoScrl from "@/components/buttons/button-primary-noscrl";
 
 function LandingSection() {
     return (
-        <section className="w-screen h-auto lg:h-screen flex flex-col justify-start items-start">
+        <motion.section
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{duration: 1.3}}
+            className="w-screen h-auto lg:h-screen flex flex-col justify-start items-start">
             <div className="w-full h-auto lg:h-5/6 flex flex-col lg:flex-row justify-start items-start">
                 <div className={"relative z-1 w-full lg:w-[70%] h-full px-[5%] sm:px-[10%] py-[30%] sm:py-[20%] lg:py-16 flex flex-col justify-center items-start gap-12 bg-[url('/assets/other/machine2.jpg')] bg-cover bg-center"}>
                     <div className={'absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-2'}></div>
@@ -47,7 +55,7 @@ function LandingSection() {
                     </p>
                 </ScrollLink>
             </div>
-        </section>
+        </motion.section>
     );
 }
 
