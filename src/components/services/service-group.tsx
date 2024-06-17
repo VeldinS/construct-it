@@ -1,8 +1,10 @@
 import React from 'react';
-7
-import arrow from '@/assets/icons/arrow-right.svg'
+
 import Image from "next/image";
+
 import ButtonTertiary from "@/components/buttons/button-tertiary";
+
+import arrow from '@/assets/icons/arrow-right.svg'
 
 interface serviceProps {
     title: string;
@@ -19,6 +21,8 @@ interface serviceProps {
     srv10: string,
     float: string
 }
+
+
 function ServiceGroup({title, description, srv1, srv2, srv3, srv4, srv5, srv6, srv7, srv8, srv9, srv10, float}: serviceProps) {
     return (
         <section className={`w-screen h-auto flex flex-col items-${float} justify-start gap-16`}>

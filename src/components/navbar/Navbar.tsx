@@ -1,11 +1,9 @@
 'use client'
-
-import React, {useEffect} from 'react';
-import Image from "next/image";
-import Link from "next/link";
+import React, {useEffect, useState} from 'react';
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
-import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 import logoImage from '@/assets/logo/logo.png';
 import buildingIcon from '@/assets/icons/Building.svg';
@@ -14,6 +12,7 @@ import servicesIcon from '@/assets/icons/Services.svg';
 import contactIcon from '@/assets/icons/Contact.svg';
 import hamburgerIcon from '@/assets/icons/Hamburger.svg';
 import closeIcon from '@/assets/icons/Close.svg';
+
 
 function Navbar() {
     const [isScrolling, setIsScrolling] = useState(false);

@@ -6,6 +6,7 @@ import {motion} from "framer-motion";
 
 import ServiceCard from "@/components/services/service-card";
 
+
 function LandingSection() {
     return (
         <motion.section
