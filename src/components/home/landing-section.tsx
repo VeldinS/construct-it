@@ -1,8 +1,11 @@
 "use client";
-import { motion } from "framer-motion";
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import { ImagesSlider } from "./image-slider";
 import ButtonPrimary from "@/components/buttons/button-primary";
+
 
 function LandingSection() {
     const images = [

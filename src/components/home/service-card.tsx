@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Image from "next/image";
 
 interface serviceCardProps {
@@ -6,6 +7,7 @@ interface serviceCardProps {
     description: string;
     image: string;
 }
+
 
 function ServiceCard({title, description, image}: serviceCardProps) {
     return (

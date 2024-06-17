@@ -1,6 +1,8 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
+
 import ButtonPrimaryNoScrl from "@/components/buttons/button-primary-noscrl";
+
 
 const ParallaxSection = () => {
     const bgRef = useRef<HTMLDivElement>(null);

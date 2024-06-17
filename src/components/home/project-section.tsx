@@ -1,8 +1,10 @@
 import React from 'react';
-import Image from "next/image";
 
+import Image from "next/image";
 import doubleArrow from '@/assets/icons/double-right-arrow.svg';
+
 import ButtonSecondary from "@/components/buttons/button-secondary";
+
 
 function ProjectSection() {
     return (

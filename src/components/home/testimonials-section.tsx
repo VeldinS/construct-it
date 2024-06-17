@@ -1,12 +1,9 @@
 import React from "react";
+
 import Image from "next/image";
+
 import starsIcon from '@/assets/icons/stars.svg';
 
-import icon1 from '@/assets/icons/grad-usluge-icon.svg';
-
-const icons = [
-    icon1, icon1, icon1,icon1, icon1, icon1,icon1, icon1, icon1,icon1, icon1, icon1
-    ];
 
 function TestimonialsSection() {
     return (
