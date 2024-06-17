@@ -1,4 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
+
+import ContactForm from "@/components/footer/contact-form";
+
 import facebookIcon from '@/assets/icons/facebook.svg';
 import linkedinIcon from '@/assets/icons/linkedin.svg';
 import instagramIcon from '@/assets/icons/instagram.svg';
@@ -6,8 +10,6 @@ import locationIcon from '@/assets/icons/location-icon.svg';
 import phoneIcon from '@/assets/icons/phone-icon.svg';
 import mailIcon from '@/assets/icons/mail-icon.svg';
 
-import Link from "next/link";
-import ContactForm from "@/components/footer/contact-form";
 
 function Footer() {
     return (

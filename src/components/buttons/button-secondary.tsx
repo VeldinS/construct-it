@@ -7,6 +7,7 @@ interface buttonProps {
     link: string
 }
 
+
 function ButtonSecondary({ text, link }: buttonProps) {
     return (
         <ScrollLink to={'kontakt'} smooth={true} duration={1000} className={'flex cursor-pointer flex-row items-center justify-center'}>

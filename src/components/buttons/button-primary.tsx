@@ -1,5 +1,4 @@
 'use client'
-
 import React from 'react';
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
@@ -7,6 +6,7 @@ interface buttonProps {
     text: string,
     link: string
 }
+
 
 function ButtonPrimary({ text, link }: buttonProps) {
     return (

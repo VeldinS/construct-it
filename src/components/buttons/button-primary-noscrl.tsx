@@ -1,12 +1,13 @@
 'use client'
-
 import React from 'react';
+
 import Link from "next/link";
 
 interface buttonProps {
     text: string,
     link: string
 }
+
 
 function ButtonPrimaryNoScrl({ text, link }: buttonProps) {
     return (
