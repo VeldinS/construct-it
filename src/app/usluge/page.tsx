@@ -4,6 +4,7 @@ import ServiceGroup from "@/components/services/service-group";
 import Footer from "@/components/footer/footer";
 import ProjectsList from "@/components/about/projects-list";
 
+
 function ServicesPage() {
     return (
         <div className={'w-screen h-auto bg-white flex flex-col items-center justify-center'}>

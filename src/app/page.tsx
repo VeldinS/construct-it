@@ -6,6 +6,7 @@ import ParallaxSection from "@/components/home/parallax-section";
 import TestimonialsSection from "@/components/home/testimonials-section";
 import Footer from "@/components/footer/footer";
 
+
 export default function Home() {
     return (
         <div className={'w-screen h-auto bg-white flex flex-col items-center justify-center'}>

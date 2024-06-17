@@ -1,11 +1,12 @@
 'use client'
+import React from 'react';
+import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
 import {motion} from "framer-motion";
 
-import React from 'react';
 import ServiceCard from "@/components/home/service-card";
-import { Link as ScrollLink, animateScroll } from 'react-scroll';
 import ButtonPrimaryNoScrl from "@/components/buttons/button-primary-noscrl";
+
 
 function LandingSection() {
     return (

@@ -1,6 +1,8 @@
 import React from 'react';
+
 import ButtonSecondary from "@/components/buttons/button-secondary";
 import FAQ from "@/components/about/FAQ";
+
 
 function FaqSection() {
     return (

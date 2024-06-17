@@ -1,7 +1,8 @@
 'use client'
-
 import React, { useState } from "react";
+
 import ProjectCard from "@/components/about/project-card";
+
 
 function ProjectsList() {
 

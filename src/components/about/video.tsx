@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 
+
 const VideoBackgroundDiv = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
 

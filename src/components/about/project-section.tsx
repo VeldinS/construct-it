@@ -1,6 +1,6 @@
 'use client'
-import ButtonSecondary from "@/components/buttons/button-secondary";
 import React, {useEffect, useRef} from "react";
+
 
 function ProjectSection() {
 

@@ -6,6 +6,7 @@ interface projectCardProps {
     answer: string;
 }
 
+
 function Faq({question, answer}: projectCardProps) {
 
     const [openQuestion, setOpenQuestion] = useState(false);

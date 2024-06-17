@@ -1,8 +1,8 @@
 import React from "react";
+
 import ButtonSecondary from "@/components/buttons/button-secondary";
 import VideoBackgroundDiv from "@/components/about/video";
-import ButtonPrimary from "@/components/buttons/button-primary";
-import ButtonTertiary from "@/components/buttons/button-tertiary";
+
 
 function VideoSection() {
 
