@@ -3,7 +3,6 @@
 import {motion} from "framer-motion";
 
 import React from 'react';
-import ButtonPrimary from "@/components/buttons/button-primary";
 import ServiceCard from "@/components/services/service-card";
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
