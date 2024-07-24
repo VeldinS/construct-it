@@ -31,7 +31,7 @@ function Footer() {
                     <div className={'flex flex-col items-center lg:items-start justify-center lg:justify-start gap-8'}>
                         <Link href={'/'} className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
                             <Image src={locationIcon} alt={'Contact icon.'} width={40} height={40}/>
-                            <p className={'text-black text-lg font-rubik font-light tracking-widest'}>Safeta Zajke broj 267, Sarajevo</p>
+                            <p className={'text-black text-lg font-rubik font-light tracking-widest'}>Safeta Zajke 267, Sarajevo</p>
                         </Link>
                         <Link href={'/'} className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
                             <Image src={mailIcon} alt={'Contact icon.'} width={40} height={40}/>
