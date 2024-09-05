@@ -106,8 +106,8 @@ function Navbar() {
                             </ScrollLink>
                         </div>
                         <div className="flex flex-col items-center justify-between gap-6 absolute bottom-[15%] left-0 right-0">
-                            <Link onClick={toggleMenu} href="mailto:info@construct.it" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
-                                info@construct.it
+                            <Link onClick={toggleMenu} href="mailto:info@cnstrt.com" className={'font-poppins text-black text-xl font-medium tracking-widest'}>
+                                info@cnstrt.com
                             </Link>
                             <Link onClick={toggleMenu} href={'/'}>
                                 <Image src={logoImage} alt={'Logo for Construct..it'} width={130} height={40}/>

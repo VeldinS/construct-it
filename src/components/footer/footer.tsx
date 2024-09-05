@@ -29,17 +29,17 @@ function Footer() {
                 </div>
                 <div className={'w-full bg-white flex flex-col justify-start items-center lg:items-start py-8 pl-0 lg:pl-[10%]'}>
                     <div className={'flex flex-col items-center lg:items-start justify-center lg:justify-start gap-8'}>
-                        <Link href={'/'} className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
+                        <Link href={'https://www.google.com/maps/place/Safeta+Zajke+267,+Sarajevo+71000/data=!4m2!3m1!1s0x4758cb80179564d3:0x3701c5b33023a164?sa=X&ved=1t:242&ictx=111'} className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
                             <Image src={locationIcon} alt={'Contact icon.'} width={40} height={40}/>
                             <p className={'text-black text-lg font-rubik font-light tracking-widest'}>Safeta Zajke 267, Sarajevo</p>
                         </Link>
-                        <Link href={'/'} className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
+                        <Link href="mailto:kontakt@cnstrt.com" className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
                             <Image src={mailIcon} alt={'Contact icon.'} width={40} height={40}/>
-                            <p className={'text-black text-lg font-rubik font-light tracking-widest'}>info@construct.it</p>
+                            <p className={'text-black text-lg font-rubik font-light tracking-widest'}>kontakt@cnstrt.com</p>
                         </Link>
-                        <Link href={'/'} className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
+                        <Link href={'tel:+38762250640'} className={'flex flex-col lg:flex-row justify-center items-center gap-4'}>
                             <Image src={phoneIcon} alt={'Contact icon.'} width={40} height={40}/>
-                            <p className={'text-black text-lg font-rubik font-light tracking-widest'}>+387 62 123 123</p>
+                            <p className={'text-black text-lg font-rubik font-light tracking-widest'}>+387 62 250 640</p>
                         </Link>
                     </div>
                 </div>

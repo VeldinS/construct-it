@@ -2,6 +2,7 @@ import React from "react";
 
 import ButtonSecondary from "@/components/buttons/button-secondary";
 import VideoBackgroundDiv from "@/components/about/video";
+import Link from "next/link";
 
 
 function VideoSection() {
@@ -23,7 +24,7 @@ function VideoSection() {
                     <div
                         className={'w-full md:w-1/2 h-full bg-orange-primary py-4 md:py-0 flex flex-col justify-center items-center gap-2'}>
                         <h1 className={'font-rubik text-4xl text-black font-bold'}>Kontaktirajte Nas</h1>
-                        <p className={'font-rubik text-xl text-black font-bold'}>info@construct.it</p>
+                        <Link  href="mailto:kontakt@cnstrt.com" className={'font-rubik text-xl text-black font-bold'}>kontakt@cnstrt.com</Link>
                     </div>
                     <div className={'w-full md:w-1/2 h-full bg-white py-4 md:py-0 hidden md:flex flex-col justify-center items-center gap-2'}>
                         <ButtonSecondary text={'ZAPOČNIMO POSAO'} link={'#kontakt'} />

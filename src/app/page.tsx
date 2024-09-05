@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect } from 'react';
 import Navbar from "@/components/navbar/Navbar";
 import LandingSection from "@/components/home/landing-section";
 import ServiceCard from "@/components/home/service-card";
@@ -5,9 +8,14 @@ import ProjectSection from "@/components/home/project-section";
 import ParallaxSection from "@/components/home/parallax-section";
 import TestimonialsSection from "@/components/home/testimonials-section";
 import Footer from "@/components/footer/footer";
-
+import emailjs from 'emailjs-com';
 
 export default function Home() {
+    useEffect(() => {
+        // Initialize EmailJS here
+        emailjs.init("PJW5v9wILDscYdwPj");
+        console.log("EmailJS initialized");
+    }, []);
     return (
         <div className={'w-screen max-w-full h-auto bg-white flex flex-col items-center justify-center'}>
             <Navbar />
