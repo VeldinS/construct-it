@@ -20,7 +20,7 @@ function ProjectSection() {
     }, []);
 
     return (
-        <section className={'h-auto lg:h-screen w-screen flex flex-col lg:flex-row items-center justify-center bg-white'}>
+        <section className={'h-auto lg:h-screen w-full max-w-full flex flex-col lg:flex-row items-center justify-center bg-white'}>
             <div className="relative w-full lg:w-1/3 h-[30vh] lg:h-full">
                 <div
                     ref={bgRef}

@@ -8,7 +8,7 @@ import ButtonSecondary from "@/components/buttons/button-secondary";
 
 function ProjectSection() {
     return (
-        <section className={'h-auto lg:h-screen w-screen flex flex-col-reverse lg:flex-row items-center justify-center bg-white'}>
+        <section className={'h-auto lg:h-screen w-full max-w-full flex flex-col-reverse lg:flex-row items-center justify-center bg-white'}>
             <div className="w-full lg:w-1/3 h-auto lg:h-full flex flex-col items-start justify-center lg:justify-start gap-4 px-[2%] lg:pt-[10%] py-12 lg:py-0 bg-orange-primary">
                 <div className="relative flex flex-row items-center md:items-start justify-start gap-3">
                     <div className="absolute w-[50px] h-[50px]">

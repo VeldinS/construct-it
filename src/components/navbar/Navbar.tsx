@@ -54,7 +54,7 @@ function Navbar() {
 
 
     return (
-        <div className={`fixed top-0 z-[999] w-screen bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between transition-transform duration-300 ${isInitialLoad || isScrolling ? '-translate-y-[150%]' : 'translate-y-0'}`}>
+        <div className={`fixed top-0 z-[999] w-full max-w-full bg-white px-[2%] py-1 md:py-2 flex flex-row items-center justify-between transition-transform duration-300 ${isInitialLoad || isScrolling ? '-translate-y-[150%]' : 'translate-y-0'}`}>
             <Link href={'/'}>
                 <Image src={logoImage} alt={'Logo for Construct..it'} width={100} height={40}/>
             </Link>
@@ -80,7 +80,7 @@ function Navbar() {
                 <button onClick={toggleMenu}>
                     <Image src={hamburgerIcon} alt={'Hamburger icon for mobile menu.'} width={40} height={40}/>
                 </button>
-                <div className={`fixed top-0 right-0 w-screen h-screen bg-[#F7F7F7] text-white transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <div className={`fixed top-0 right-0 w-full h-screen bg-[#F7F7F7] text-white transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <div className="flex justify-end p-4">
                         <button onClick={toggleMenu} className="text-2xl">
                             <Image src={closeIcon} alt={'Hamburger icon for mobile menu.'} width={30} height={30}/>

@@ -10,7 +10,7 @@ import Footer from "@/components/footer/footer";
 
 function AboutPage() {
     return (
-        <div className={'w-screen h-auto bg-white flex flex-col items-center justify-center'}>
+        <div className={'w-screen max-w-full h-auto bg-white flex flex-col items-center justify-center'}>
             <Navbar/>
             <LandingSection />
             <ProjectSection />

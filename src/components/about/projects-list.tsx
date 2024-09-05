@@ -14,7 +14,7 @@ function ProjectsList() {
 
     return (
         <section id={'projekti'}
-                 className={'w-screen bg-white h-auto py-24 px-[5%] md:px-[15%] flex flex-col items-center justify-center gap-8 md:gap-12'}>
+                 className={'w-full max-w-full bg-white h-auto py-24 px-[5%] md:px-[15%] flex flex-col items-center justify-center gap-8 md:gap-12'}>
             <h1 className={'text-black font-rubik text-3xl sm:text-4xl font-bold'}>Posljednji Projekti</h1>
             <div className={'w-full flex flex-col items-center justify-center gap-12'}>
                 <div className={'w-[50px] h-[5px] bg-orange-primary '}></div>

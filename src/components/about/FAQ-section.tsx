@@ -6,7 +6,7 @@ import FAQ from "@/components/about/FAQ";
 
 function FaqSection() {
     return (
-        <section className={'h-auto lg:h-screen w-screen py-16 lg:py-[5%] px-[5%] lg:px-[10%] bg-[#F7F7F7] flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0'}>
+        <section className={'h-auto lg:h-screen w-full max-w-full py-16 lg:py-[5%] px-[5%] lg:px-[10%] bg-[#F7F7F7] flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0'}>
             <div
                 className="relative bg-transparent w-full lg:w-1/3 h-auto lg:h-full flex flex-col items-start justify-start gap-12 px-0 lg:px-6">
                 <h1 className={'text-[#2A2A2A] font-rubik text-3xl sm:text-4xl tracking-widest font-bold'}>Odgovori na Vaša Najčešća Pitanja</h1>

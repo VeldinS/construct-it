@@ -22,7 +22,7 @@ function LandingSection() {
             animate={{opacity: 1}}
             exit={{opacity: 0}}
             transition={{duration: 1.3}}
-            className={'w-screen h-screen relative bg-cover bg-center flex flex-col items-center justify-center gap-8'}>
+            className={'w-full max-w-full h-screen relative bg-cover bg-center flex flex-col items-center justify-center gap-8'}>
             <ImagesSlider className="h-full " images={images}>
             <motion.div
                 initial={{

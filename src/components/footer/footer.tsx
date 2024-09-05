@@ -13,7 +13,7 @@ import mailIcon from '@/assets/icons/mail-icon.svg';
 
 function Footer() {
     return (
-        <section id={'kontakt'} className={'w-screen h-auto flex flex-col lg:flex-row items-stretch justify-center'}>
+        <section id={'kontakt'} className={'w-full max-w-full h-auto flex flex-col lg:flex-row items-stretch justify-center'}>
             <ContactForm />
             <div className={'w-full lg:w-1/2 h-auto bg-white'}>
                 <div className={'w-full h-auto bg-[#2A2A2A] flex flex-row justify-center items-center gap-16 py-10'}>

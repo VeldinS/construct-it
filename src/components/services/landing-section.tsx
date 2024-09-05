@@ -14,7 +14,7 @@ function LandingSection() {
             animate={{opacity: 1}}
             exit={{opacity: 0}}
             transition={{duration: 1.3}}
-            className="w-screen h-auto lg:h-screen flex flex-col justify-start items-start">
+            className="w-full max-w-full h-auto lg:h-screen flex flex-col justify-start items-start">
             <div className="relative w-full h-auto lg:h-5/6 flex flex-col lg:flex-row justify-between items-start bg-[url('/assets/other/services-bg.jpg')] bg-cover bg-center">
                 <div className={'absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-2'}></div>
                 <div className={"relative z-1 w-auto h-full px-[3%] sm:px-[10%] py-[30%] sm:py-[20%] lg:py-16 flex flex-col justify-center items-start gap-12"}>

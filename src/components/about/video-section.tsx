@@ -7,7 +7,7 @@ import VideoBackgroundDiv from "@/components/about/video";
 function VideoSection() {
 
     return (
-        <section className={'h-auto lg:h-screen w-screen flex flex-col lg:flex-row items-center justify-center bg-white'}>
+        <section className={'h-auto lg:h-screen w-full max-w-full flex flex-col lg:flex-row items-center justify-center bg-white'}>
             <div className="relative bg-[#2A2A2A] w-full lg:w-1/3 h-auto lg:h-full flex flex-col items-start justify-start gap-12 px-6 py-12 lg:py-[5%]">
                 <h1 className={'text-white font-rubik text-3xl sm:text-4xl tracking-widest font-bold'}>Posvećenost Kvalitetu i Zadovoljstvu Klijenata</h1>
                 <div className={'w-[50px] h-[5px] bg-orange-primary'}></div>

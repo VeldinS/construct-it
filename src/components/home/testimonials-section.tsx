@@ -7,7 +7,7 @@ import starsIcon from '@/assets/icons/stars.svg';
 
 function TestimonialsSection() {
     return (
-        <section className={'h-auto w-screen py-16 bg-[#F7F7F7] flex flex-col justify-center items-center gap-12'}>
+        <section className={'h-auto w-full max-w-full py-16 bg-[#F7F7F7] flex flex-col justify-center items-center gap-12'}>
             <h1 className={'text-[#2A2A2A] font-rubik text-3xl md:text-4xl font-bold tracking-wider'}>Zadovoljni Klijenti</h1>
             <div className={'w-[50px] h-[5px] bg-orange-primary '}></div>
             <div className={'w-full px-[5%] lg:px-[15%] grid grid-cols-1 lg:grid-cols-3 gap-8'}>

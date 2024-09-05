@@ -7,7 +7,7 @@ import ProjectsList from "@/components/about/projects-list";
 
 function ServicesPage() {
     return (
-        <div className={'w-screen h-auto bg-white flex flex-col items-center justify-center'}>
+        <div className={'w-screen max-w-full h-auto bg-white flex flex-col items-center justify-center'}>
             <Navbar />
             <LandingSection />
             <div id={"sveusluge"} className={'w-full flex flex-col items-center justify-center gap-16'}>

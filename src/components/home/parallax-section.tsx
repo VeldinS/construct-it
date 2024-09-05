@@ -21,7 +21,7 @@ const ParallaxSection = () => {
     }, []);
 
     return (
-        <div className="relative w-screen h-screen overflow-hidden">
+        <div className="relative w-full max-w-full h-screen overflow-hidden">
             <div
                 ref={bgRef}
                 className="bg-[url('/assets/other/machine.jpg')] absolute inset-0 bg-fixed bg-contain md:bg-cover bg-center"

@@ -9,10 +9,10 @@ import Footer from "@/components/footer/footer";
 
 export default function Home() {
     return (
-        <div className={'w-screen h-auto bg-white flex flex-col items-center justify-center'}>
+        <div className={'w-screen max-w-full h-auto bg-white flex flex-col items-center justify-center'}>
             <Navbar />
             <LandingSection />
-            <section className={'w-screen px-[5%] py-16 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-2 gap-12'}>
+            <section className={'w-full max-w-full px-[5%] py-16 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-2 gap-12'}>
                 <ServiceCard title={'Izrada kamene galanterije'}
                              description={'Koristimo najkvalitetnije kamenje za kreiranje stolova, stolica, fontana i drugih elemenata.'}
                              image={'/assets/icons/kamen-icon.svg'}
