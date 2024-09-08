@@ -3,6 +3,7 @@ import { Rubik } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${rubik.className} ${poppins.className}`}>{children}</body>
+      <GoogleAnalytics gaId="G-LVQX8BT6RX" />
     </html>
   );
 }

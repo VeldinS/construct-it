@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Navbar from "@/components/navbar/Navbar";
 import LandingSection from "@/components/home/landing-section";
 import ServiceCard from "@/components/home/service-card";
@@ -9,6 +9,8 @@ import ParallaxSection from "@/components/home/parallax-section";
 import TestimonialsSection from "@/components/home/testimonials-section";
 import Footer from "@/components/footer/footer";
 import emailjs from 'emailjs-com';
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 export default function Home() {
     useEffect(() => {
@@ -18,6 +20,7 @@ export default function Home() {
     }, []);
     return (
         <div className={'w-screen max-w-full h-auto bg-white flex flex-col items-center justify-center'}>
+            <GoogleAnalytics gaId="G-LVQX8BT6RX" />
             <Navbar />
             <LandingSection />
             <section className={'w-full max-w-full px-[5%] py-16 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-2 gap-12'}>
