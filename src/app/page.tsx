@@ -13,7 +13,7 @@ import emailjs from 'emailjs-com';
 export default function Home() {
     useEffect(() => {
         // Initialize EmailJS here
-        emailjs.init("PJW5v9wILDscYdwPj");
+        emailjs.init("S07RkuRMn35bd01Nr");
         console.log("EmailJS initialized");
     }, []);
     return (

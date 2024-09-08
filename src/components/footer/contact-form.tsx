@@ -7,7 +7,7 @@ import emailjs from 'emailjs-com'; // Import emailjs
 const ContactForm = () => {
     // Initialize EmailJS in useEffect or globally
     useEffect(() => {
-        emailjs.init("PJW5v9wILDscYdwPj");
+        emailjs.init("S07RkuRMn35bd01Nr");
     }, []);
 
     const [name, setName] = useState('');
@@ -41,7 +41,7 @@ const ContactForm = () => {
         const form = document.querySelector('#email-form') as HTMLFormElement;
 
         // Use emailjs.sendForm to send the form data
-        await emailjs.sendForm('service_by9akeq', 'template_xn26i2f', form)
+        await emailjs.sendForm('service_anksd4q', 'template_h96jodq', form)
             .then(response => {
                 console.log('SUCCESS!', response.status, response.text);
                 setShowSuccessModal(true); // Show success modal
