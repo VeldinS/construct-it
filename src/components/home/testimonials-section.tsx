@@ -30,7 +30,7 @@ function TestimonialsSection() {
                         "Njihov tim je bio izuzetno profesionalan. Preporučujem ih za sve vrste građevinskih radova!"
                     </p>
                     <h2 className="text-black font-rubik font-medium text-base">
-                        Maja S.
+                        Safet H.
                     </h2>
                 </div>
                 <div className={'flex flex-col justify-start items-start gap-8 p-6 bg-white'}>
